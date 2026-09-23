@@ -7,23 +7,31 @@
 
     <title>Trabalhos | Aurélio Creator</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="navbar">
+    <header class="navbar navbar-expand-lg navbar-dark">
 
-        <div class="nav-container">
+        <div class="container nav-container">
 
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo navbar-brand">
                 <img src="imgs/logo.png" alt="Logo Aurélio Creator">
             </a>
 
-            <nav class="nav-links">
-                <a href="trabalhos.html">Trabalhos</a>
-                <a href="contato.html">Contato</a>
-            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <nav class="navbar-nav nav-links">
+                    <a href="trabalhos.html">Trabalhos</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+            </div>
 
         </div>
 
@@ -51,34 +59,62 @@
                     que já produzi e editei.
                 </p>
 
+                <div id="projetosCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel">
 
-                <div class="works-links">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Projeto 01"></button>
+                        <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="1"
+                            aria-label="Projeto 02"></button>
+                        <button type="button" data-bs-target="#projetosCarousel" data-bs-slide-to="2"
+                            aria-label="Projeto 03"></button>
+                    </div>
 
-                    <a
-                        href="https://www.instagram.com/p/DX0Pq0VM9ZP/"
-                        target="_blank"
-                    >
-                        <span>Projeto 01</span>
-                        <span>Instagram</span>
-                    </a>
+                    <div class="carousel-inner">
 
+                        <div class="carousel-item active">
+                            <div class="carousel-slide-content">
+                                <p class="section-label">PROJETO 01</p>
+                                <h3>Projeto 01</h3>
+                                <a href="https://www.instagram.com/p/DX0Pq0VM9ZP/" target="_blank" class="button">
+                                    Ver no Instagram
+                                </a>
+                            </div>
+                        </div>
 
-                    <a
-                        href="https://www.instagram.com/p/DZI2a7Spwtr/"
-                        target="_blank"
-                    >
-                        <span>Projeto 02</span>
-                        <span>Instagram</span>
-                    </a>
+                        <div class="carousel-item">
+                            <div class="carousel-slide-content">
+                                <p class="section-label">PROJETO 02</p>
+                                <h3>Projeto 02</h3>
+                                <a href="https://www.instagram.com/p/DZI2a7Spwtr/" target="_blank" class="button">
+                                    Ver no Instagram
+                                </a>
+                            </div>
+                        </div>
 
+                        <div class="carousel-item">
+                            <div class="carousel-slide-content">
+                                <p class="section-label">PROJETO 03</p>
+                                <h3>Projeto 03</h3>
+                                <a href="https://www.instagram.com/p/DR3JI8ojStb/" target="_blank" class="button">
+                                    Ver no Instagram
+                                </a>
+                            </div>
+                        </div>
 
-                    <a
-                        href="https://www.instagram.com/p/DR3JI8ojStb/"
-                        target="_blank"
-                    >
-                        <span>Projeto 03</span>
-                        <span>Instagram</span>
-                    </a>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projetosCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#projetosCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
 
                 </div>
 
@@ -96,6 +132,8 @@
         </p>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

@@ -386,3 +386,219 @@ footer {
 
     font-size: 13px;
 }
+
+/* ========================================
+   BOOTSTRAP — AJUSTES
+======================================== */
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 10px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-nav.nav-links a {
+    color: #ffffff;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-buttons button.button {
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+/* Cards */
+
+.service-card .card-body {
+    padding: 0;
+}
+
+.service-card .card-title {
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.service-card .card-text {
+    color: #888888;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Carousel */
+
+.custom-carousel {
+    max-width: 900px;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 1px solid #222222;
+    background: #111111;
+}
+
+.carousel-slide-content {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.carousel-slide-content h3 {
+    font-size: 32px;
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
+}
+
+.custom-carousel .carousel-indicators [data-bs-target] {
+    background-color: #ffffff;
+}
+
+/* Modal */
+
+.custom-modal {
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid #222222;
+    border-radius: 24px;
+}
+
+.custom-modal .modal-title {
+    font-size: 22px;
+}
+
+.custom-modal .contact-links {
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+/* ========================================
+   RESPONSIVO
+======================================== */
+
+@media (max-width: 900px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        padding: 18px 20px;
+    }
+
+    .navbar-collapse {
+        margin-top: 20px;
+    }
+
+    .navbar-nav.nav-links {
+        gap: 18px;
+        align-items: flex-start;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 120px 20px 60px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 90px 20px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2,
+    .about-content h2,
+    .contact-content h2 {
+        letter-spacing: -1px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .service-card {
+        min-height: auto;
+        padding: 28px;
+    }
+
+    .works-page,
+    .contact-page {
+        padding: 120px 20px 70px;
+    }
+
+    .works-content h1 {
+        letter-spacing: -2px;
+    }
+
+    .works-links a {
+        padding: 18px 0;
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .works-links a span:last-child {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+    }
+}
