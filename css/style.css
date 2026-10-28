@@ -415,6 +415,7 @@ footer {
     font-family: inherit;
     font-size: inherit;
     cursor: pointer;
+    color: #ffffff
 }
 
 /* Cards */
@@ -427,6 +428,7 @@ footer {
     font-size: 24px;
     line-height: 1.1;
     margin-bottom: 20px;
+    color: #ffffff
 }
 
 .service-card .card-text {
@@ -489,116 +491,1042 @@ footer {
     margin-top: 20px;
 }
 
+
+
 /* ========================================
-   RESPONSIVO
+   DESENVOLVIMENTO DE SOFTWARE
+======================================== */
+
+.development-description {
+    max-width: 680px;
+    margin-top: 25px;
+    color: #999999;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.development-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.development-card {
+    min-height: 300px;
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid #222222;
+    border-radius: 28px;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.development-card:hover {
+    transform: translateY(-6px);
+    border-color: #444444;
+    background: #151515;
+}
+
+.development-card .card-body {
+    padding: 32px;
+}
+
+.development-number {
+    display: block;
+    margin-bottom: 35px;
+    color: #666666;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.development-card .card-title {
+    margin-bottom: 18px;
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.development-card .card-text {
+    margin-bottom: 25px;
+    color: #999999;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-list span {
+    padding: 7px 11px;
+    border: 1px solid #303030;
+    border-radius: 50px;
+    color: #bbbbbb;
+    font-size: 12px;
+}
+
+.development-project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    margin-top: 30px;
+    padding: 35px;
+
+    border: 1px solid #222222;
+    border-radius: 28px;
+    background: #0e0e0e;
+}
+
+.development-project .section-label {
+    margin-bottom: 15px;
+}
+
+.development-project h3 {
+    margin-bottom: 12px;
+    font-size: 27px;
+}
+
+.development-project div > p:last-child {
+    max-width: 600px;
+    color: #999999;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.development-project .button {
+    flex-shrink: 0;
+}
+
+
+/* ========================================
+   EXPERIÊNCIA PROFISSIONAL — IEAv
+======================================== */
+
+.experience-card {
+    padding: 40px;
+    border: 1px solid #222222;
+    border-radius: 28px;
+    background: #111111;
+    transition: border-color 0.3s ease;
+}
+
+.experience-card:hover {
+    border-color: #444444;
+}
+
+.experience-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #292929;
+}
+
+.experience-label,
+.experience-number,
+.education-category,
+.qualification-category,
+.competency-label {
+    color: #777777;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.experience-heading h3 {
+    margin: 15px 0;
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+.experience-role {
+    margin: 0;
+    color: #999999;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.experience-index,
+.education-index,
+.qualification-index {
+    color: #555555;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.experience-description {
+    max-width: 800px;
+    margin: 30px 0;
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.experience-item {
+    padding: 25px;
+    border: 1px solid #252525;
+    border-radius: 20px;
+    background: #0d0d0d;
+    transition: border-color 0.3s ease;
+}
+
+.experience-item:hover {
+    border-color: #444444;
+}
+
+.experience-number {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 10px;
+}
+
+.experience-item h4 {
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 1.3;
+}
+
+.experience-item p {
+    margin: 0;
+    color: #888888;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.experience-technologies {
+    margin-top: 35px;
+}
+
+.experience-technologies .section-label {
+    margin-bottom: 18px;
+}
+
+
+/* ========================================
+   FORMAÇÃO ACADÊMICA
+======================================== */
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.education-card {
+    padding: 32px;
+    border: 1px solid #222222;
+    border-radius: 28px;
+    background: #111111;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.education-card:hover,
+.qualification-card:hover {
+    transform: translateY(-5px);
+    border-color: #444444;
+}
+
+.education-card-top,
+.qualification-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.education-status {
+    color: #888888;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.education-category {
+    margin-bottom: 15px;
+}
+
+.education-card h3 {
+    margin-bottom: 20px;
+    font-size: clamp(22px, 3vw, 30px);
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.education-institution {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.education-description {
+    margin: 0;
+    color: #888888;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   CURSOS E QUALIFICAÇÕES
+======================================== */
+
+.qualifications-description {
+    max-width: 650px;
+    margin-top: 25px;
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.qualifications-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.qualification-card {
+    min-height: 260px;
+    padding: 32px;
+    border: 1px solid #222222;
+    border-radius: 28px;
+    background: #111111;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.qualification-card-top {
+    margin-bottom: 30px;
+}
+
+.qualification-arrow {
+    color: #777777;
+    font-size: 20px;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.qualification-card:hover .qualification-arrow {
+    color: #ffffff;
+    transform: translate(3px, -3px);
+}
+
+.qualification-category {
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+
+.qualification-card h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+}
+
+.qualification-card > p:last-child {
+    margin: 0;
+    color: #888888;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   COMPETÊNCIAS TÉCNICAS
+======================================== */
+
+.competencies-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.competency-group {
+    padding: 28px;
+    border: 1px solid #222222;
+    border-radius: 24px;
+    background: #111111;
+}
+
+.competency-label {
+    margin-bottom: 22px;
+}
+
+.competency-group .tech-list {
+    gap: 10px;
+}
+
+.competency-group .tech-list span {
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.competency-group .tech-list span:hover {
+    color: #ffffff;
+    border-color: #555555;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE DAS NOVAS SEÇÕES
 ======================================== */
 
 @media (max-width: 900px) {
+    .experience-card {
+        padding: 30px;
+    }
+
+    .education-container,
+    .qualifications-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .education-card,
+    .qualification-card {
+        padding: 25px;
+    }
+}
+
+
+/* ========================================
+   RESPONSIVIDADE COMPLETA
+   Tablet, celular e telas pequenas
+======================================== */
+
+/* Tablets e notebooks menores */
+@media (max-width: 900px) {
+
+    /* Layout geral */
+    .section {
+        padding: 110px 30px;
+    }
+
+    /* Sobre */
     .about {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
+    .about-image {
+        max-width: 650px;
+    }
+
+    /* Serviços */
     .services-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Desenvolvimento */
+    .development-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .development-project {
+        align-items: flex-start;
+        gap: 25px;
+        padding: 30px;
+    }
+
+    .development-project .button {
+        white-space: nowrap;
+    }
+
+    /* Experiência profissional */
+    .experience-card {
+        padding: 30px;
+    }
+
+    .experience-heading h3 {
+        font-size: clamp(38px, 6vw, 56px);
+    }
+
+    /* Formação e qualificações */
+    .education-container,
+    .qualifications-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .education-card,
+    .qualification-card {
+        padding: 25px;
+    }
+
+    /* Carrossel */
+    .custom-carousel {
+        max-width: 100%;
+    }
+
+    .carousel-slide-content {
+        padding: 35px 50px;
     }
 }
 
+
+/* Celulares */
 @media (max-width: 640px) {
+
+    /* Navegação */
     .navbar {
-        padding: 18px 20px;
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        width: 44px;
     }
 
     .navbar-collapse {
-        margin-top: 20px;
+        margin-top: 18px;
+        padding-bottom: 8px;
     }
 
     .navbar-nav.nav-links {
-        gap: 18px;
         align-items: flex-start;
+        gap: 18px;
+    }
+
+    .navbar-nav.nav-links a,
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 90vh;
+        padding: 120px 22px 65px;
+    }
+
+    .hero-label,
+    .section-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+        line-height: 1.6;
+    }
+
+    .hero-label {
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: clamp(43px, 12vw, 66px);
+        line-height: 1;
+        letter-spacing: -2.5px;
+        overflow-wrap: break-word;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 30px;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: stretch;
+        gap: 12px;
+        width: 100%;
     }
 
-    .nav-links {
-        gap: 18px;
+    .hero-buttons .button,
+    .hero-buttons button.button {
+        width: 100%;
+        min-height: 48px;
+        justify-content: center;
+        text-align: center;
     }
 
-    .nav-links a {
-        font-size: 13px;
-    }
-
-    .hero {
-        padding: 120px 20px 60px;
-    }
-
-    .hero h1 {
-        letter-spacing: -2px;
-    }
-
-    .hero-description {
-        font-size: 16px;
-    }
-
+    /* Seções */
     .section {
-        padding: 90px 20px;
+        padding: 80px 22px;
     }
 
     .section-header {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
 
     .section-header h2,
     .about-content h2,
     .contact-content h2 {
-        letter-spacing: -1px;
+        font-size: clamp(34px, 9vw, 48px);
+        line-height: 1.05;
+        letter-spacing: -1.5px;
+        overflow-wrap: break-word;
     }
 
+    /* Sobre */
+    .about {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .about-image img {
+        border-radius: 22px;
+    }
+
+    .about-content > p:not(.section-label) {
+        font-size: 15px;
+        line-height: 1.75;
+        margin-top: 20px;
+    }
+
+    /* Cards de serviços */
     .services-container {
-        grid-template-columns: 1fr;
-        gap: 18px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
     }
 
     .service-card {
         min-height: auto;
-        padding: 28px;
+        padding: 25px;
+        border-radius: 22px;
     }
 
-    .works-page,
-    .contact-page {
-        padding: 120px 20px 70px;
+    .service-card h3,
+    .service-card .card-title {
+        font-size: 22px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .service-card p,
+    .service-card .card-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* Página de trabalhos */
+    .works-page {
+        min-height: 100vh;
+        padding: 120px 22px 65px;
     }
 
     .works-content h1 {
-        letter-spacing: -2px;
+        font-size: clamp(42px, 12vw, 65px);
+        line-height: 1;
+        letter-spacing: -2.5px;
+        overflow-wrap: break-word;
+    }
+
+    .works-description {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 40px;
     }
 
     .works-links a {
+        gap: 15px;
         padding: 18px 0;
-        font-size: 16px;
-        gap: 10px;
+        font-size: 15px;
+    }
+
+    .works-links a:hover {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .works-links a span:first-child {
+        min-width: 0;
+        overflow-wrap: anywhere;
     }
 
     .works-links a span:last-child {
-        font-size: 13px;
+        flex-shrink: 0;
+        font-size: 12px;
         white-space: nowrap;
+    }
+
+    /* Página de contato */
+    .contact-page {
+        min-height: 90vh;
+        padding: 120px 22px 70px;
+    }
+
+    .contact-content h2 {
+        font-size: clamp(43px, 12vw, 66px);
+        letter-spacing: -2.5px;
+    }
+
+    .contact-description {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 30px;
     }
 
     .contact-links {
         flex-direction: column;
-        width: 100%;
+        align-items: stretch;
+        gap: 12px;
     }
 
     .contact-links a {
         width: 100%;
+        padding: 14px 18px;
         text-align: center;
     }
 
+    /* Botões gerais */
     .button {
+        min-height: 46px;
+        padding: 13px 18px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    /* Desenvolvimento de software */
+    .development-description,
+    .qualifications-description {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-top: 20px;
+    }
+
+    .development-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .development-card {
+        min-height: auto;
+        border-radius: 22px;
+    }
+
+    .development-card .card-body {
+        padding: 25px;
+    }
+
+    .development-number {
+        margin-bottom: 25px;
+    }
+
+    .development-card .card-title {
+        font-size: 21px;
+        line-height: 1.25;
+    }
+
+    .development-card .card-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .tech-list {
+        gap: 7px;
+    }
+
+    .tech-list span {
+        font-size: 11px;
+        padding: 7px 10px;
+    }
+
+    .development-project {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 22px;
+        margin-top: 20px;
+        padding: 25px;
+        border-radius: 22px;
+    }
+
+    .development-project h3 {
+        font-size: 23px;
+        line-height: 1.2;
+    }
+
+    .development-project div > p:last-child {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .development-project .button {
         width: 100%;
+        white-space: normal;
         justify-content: center;
+    }
+
+    /* Experiência profissional */
+    .experience-card {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .experience-heading {
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 22px;
+    }
+
+    .experience-heading h3 {
+        font-size: clamp(34px, 9vw, 46px);
+        line-height: 1.05;
+        letter-spacing: -1.5px;
+        overflow-wrap: anywhere;
+    }
+
+    .experience-role {
+        font-size: 14px;
+    }
+
+    .experience-index {
+        font-size: 12px;
+    }
+
+    .experience-description {
+        margin: 22px 0;
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .experience-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .experience-item {
+        padding: 20px;
+        border-radius: 17px;
+    }
+
+    .experience-number {
+        margin-bottom: 18px;
+    }
+
+    .experience-item h4 {
+        font-size: 17px;
+    }
+
+    .experience-item p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .experience-technologies {
+        margin-top: 25px;
+    }
+
+    /* Formação acadêmica */
+    .education-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .education-card {
+        padding: 23px;
+        border-radius: 22px;
+    }
+
+    .education-card-top {
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .education-status {
+        text-align: right;
+        line-height: 1.5;
+    }
+
+    .education-card h3 {
+        font-size: 23px;
+        line-height: 1.25;
+    }
+
+    .education-institution {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .education-description {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    /* Cursos e qualificações */
+    .qualifications-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .qualification-card {
+        min-height: auto;
+        padding: 23px;
+        border-radius: 22px;
+    }
+
+    .qualification-card-top {
+        margin-bottom: 24px;
+    }
+
+    .qualification-card h3 {
+        font-size: 22px;
+        line-height: 1.25;
+    }
+
+    .qualification-card > p:last-child {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    /* Competências técnicas */
+    .competencies-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .competency-group {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .competency-label {
+        margin-bottom: 18px;
+        line-height: 1.6;
+    }
+
+    /* Carrossel Bootstrap */
+    .custom-carousel {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .carousel-slide-content {
+        min-height: 250px;
+        gap: 15px;
+        padding: 35px 35px 45px;
+    }
+
+    .carousel-slide-content h3 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .carousel-slide-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .custom-carousel .carousel-control-prev-icon,
+    .custom-carousel .carousel-control-next-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Modal de contato */
+    .custom-modal {
+        border-radius: 20px;
+    }
+
+    .custom-modal .modal-title {
+        font-size: 19px;
+    }
+
+    .custom-modal .modal-body {
+        padding: 22px;
+    }
+
+    .custom-modal .contact-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .custom-modal .contact-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Rodapé */
+    footer {
+        padding: 30px 20px;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+}
+
+
+/* Celulares muito estreitos */
+@media (max-width: 380px) {
+
+    .navbar {
+        padding: 14px 16px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .hero {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        letter-spacing: -2px;
+    }
+
+    .section,
+    .works-page,
+    .contact-page {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .section-header h2,
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .service-card,
+    .development-card .card-body,
+    .development-project,
+    .experience-card,
+    .education-card,
+    .qualification-card,
+    .competency-group {
+        padding: 20px;
+    }
+
+    .works-links a {
+        font-size: 14px;
+    }
+
+    .works-links a span:last-child {
+        font-size: 11px;
+    }
+
+    .carousel-slide-content {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+}
+
+
+/* Acessibilidade: respeita quem prefere menos animação */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
